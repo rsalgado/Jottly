@@ -8,6 +8,7 @@
     - Testimonials
     - Action
     - Footer
+    - Queries
 */
 
 /* Common styles */
@@ -63,10 +64,6 @@ h1, h2, h3, h4, h5, h6 {
           background: #fff;
           color: #009be8;
         }
-  
-  #header .headertext {
-    margin-top: 10em;
-  }
 
   #header h1 {
     color: #fff;
@@ -88,6 +85,10 @@ h1, h2, h3, h4, h5, h6 {
     #header p strong {
       color: #fff;
     }
+
+  #header .headertext {
+    margin-top: 10em;
+  }
 
 
 /* Benefits */
@@ -304,4 +305,22 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-size: 0.7em;
     margin-top: 0.5em;
+  }
+
+
+  /* Media queries */
+
+  /* Smaller than phablet (also point when grid becomes active) */
+  @media (max-width: 550px) {
+    #header nav, #header .logo {
+      text-align: center;
+    }
+
+    #header .headertext {
+      margin-top: 5em;
+    }
+
+    #header .inputs {
+      text-align: center;
+    }
   }
